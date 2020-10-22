@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OilingTableViewCell" rowHeight="82" id="KGk-i7-Jjw" customClass="OilingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheer 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ozi-sy-PTa">
+                        <rect key="frame" x="16" y="20" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="6yT-w2-sjC"/>
+                            <constraint firstAttribute="width" constant="42" id="lOI-pW-5yL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HI1-XD-JHL">
+                        <rect key="frame" x="68" y="25" width="28" height="20"/>
+                        <attributedString key="attributedText">
+                            <fragment content="加油">
+                                <attributes>
+                                    <color key="NSColor" red="0.20392156862745098" green="0.20000000000000001" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="14" name="PingFangSC-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Yd-Zv-nic">
+                        <rect key="frame" x="68" y="55" width="159" height="2"/>
+                        <color key="tintColor" red="0.93725490199999995" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="159" id="J29-aq-Uys"/>
+                        </constraints>
+                        <color key="trackTintColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOe-9s-nwe">
+                        <rect key="frame" x="233" y="50" width="15" height="12"/>
+                        <attributedString key="attributedText">
+                            <fragment content="5/5">
+                                <attributes>
+                                    <color key="NSColor" red="0.52549019607843139" green="0.52549019607843139" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="10" name="ComicSansMS"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLK-M5-gG0">
+                        <rect key="frame" x="214" y="26" width="90" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="441-M1-hWM"/>
+                            <constraint firstAttribute="width" constant="90" id="tIa-qF-91z"/>
+                        </constraints>
+                        <color key="tintColor" red="0.93725490196078431" green="0.70588235294117641" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" title="领取40L"/>
+                        <connections>
+                            <action selector="btnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PEN-Go-XxQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ozi-sy-PTa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ayr-L2-PI2"/>
+                    <constraint firstItem="HI1-XD-JHL" firstAttribute="leading" secondItem="Ozi-sy-PTa" secondAttribute="trailing" constant="10" id="FQc-Fl-i6C"/>
+                    <constraint firstItem="Ozi-sy-PTa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GYt-D2-m0b"/>
+                    <constraint firstItem="TOe-9s-nwe" firstAttribute="centerY" secondItem="5Yd-Zv-nic" secondAttribute="centerY" id="Itc-TI-XO2"/>
+                    <constraint firstItem="TOe-9s-nwe" firstAttribute="leading" secondItem="5Yd-Zv-nic" secondAttribute="trailing" constant="6" id="P1e-zn-i7T"/>
+                    <constraint firstItem="Ozi-sy-PTa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="War-AR-G4k"/>
+                    <constraint firstItem="5Yd-Zv-nic" firstAttribute="leading" secondItem="Ozi-sy-PTa" secondAttribute="trailing" constant="10" id="c4Y-cR-apO"/>
+                    <constraint firstAttribute="trailing" secondItem="vLK-M5-gG0" secondAttribute="trailing" constant="16" id="f25-Pe-pjR"/>
+                    <constraint firstItem="HI1-XD-JHL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="hrb-QA-qth"/>
+                    <constraint firstItem="5Yd-Zv-nic" firstAttribute="top" secondItem="HI1-XD-JHL" secondAttribute="bottom" constant="10" id="oPW-as-7DZ"/>
+                    <constraint firstItem="vLK-M5-gG0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rjk-ZL-HbS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+            <connections>
+                <outlet property="btn" destination="vLK-M5-gG0" id="rc1-hJ-2q9"/>
+                <outlet property="imageView" destination="Ozi-sy-PTa" id="ESf-jB-VjY"/>
+                <outlet property="progress" destination="5Yd-Zv-nic" id="SKf-tg-Ec8"/>
+                <outlet property="progressLabel" destination="TOe-9s-nwe" id="Tpg-Fz-dNB"/>
+                <outlet property="titleLabel" destination="HI1-XD-JHL" id="OrC-Vx-qqM"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="97.767857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cheer 2.png" width="42" height="42"/>
+    </resources>
+</document>

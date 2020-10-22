@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OilingHeadView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="OilingHeadView" id="iN0-l3-epB" customClass="OilingHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhl-cz-QJf">
+                    <rect key="frame" x="16" y="134" width="343" height="96"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite.png" translatesAutoresizingMaskIntoConstraints="NO" id="wil-WS-Sox">
+                            <rect key="frame" x="10" y="16" width="42" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="42" id="nNo-mQ-W4f"/>
+                                <constraint firstAttribute="height" constant="42" id="zor-mY-Fqt"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBF-1Q-23T">
+                            <rect key="frame" x="62" y="22" width="56" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="pd1-Et-JVx"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="邀请好友">
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="PingFangSC-Medium"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBa-ft-jwE">
+                            <rect key="frame" x="62" y="42" width="139" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="3AW-jG-BdS"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">每成功邀请一位好友得 5L 燃料
+</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.47843474149703979" green="0.47842532396316528" blue="0.47843170166015625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <font key="NSFont" size="10" name="PingFangSC-Regular"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a47-ls-i63">
+                            <rect key="frame" x="57" y="70" width="201" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="CTQ-SY-NPr"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">已成功邀请4位好友，并成功获得 20L
+</string>
+                                    <attributes>
+                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTL-5z-0wd">
+                            <rect key="frame" x="266" y="22" width="67" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="67" id="AUa-5A-Qp4"/>
+                                <constraint firstAttribute="height" constant="30" id="ggr-A4-jU1"/>
+                            </constraints>
+                            <state key="normal" title="去邀请">
+                                <color key="titleColor" red="0.93725490196078431" green="0.70588235294117641" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="inviteAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="08S-f1-rOv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="a47-ls-i63" firstAttribute="leading" secondItem="hhl-cz-QJf" secondAttribute="leading" constant="57" id="4tb-AD-b6L"/>
+                        <constraint firstItem="a47-ls-i63" firstAttribute="top" secondItem="vBa-ft-jwE" secondAttribute="bottom" constant="18" id="BdU-Ae-mH4"/>
+                        <constraint firstItem="QBF-1Q-23T" firstAttribute="top" secondItem="hhl-cz-QJf" secondAttribute="top" constant="22" id="CfB-Sj-S9I"/>
+                        <constraint firstItem="vBa-ft-jwE" firstAttribute="top" secondItem="QBF-1Q-23T" secondAttribute="bottom" constant="6" id="DGr-tW-kOd"/>
+                        <constraint firstItem="vBa-ft-jwE" firstAttribute="leading" secondItem="wil-WS-Sox" secondAttribute="trailing" constant="10" id="EcZ-tl-WWG"/>
+                        <constraint firstItem="wil-WS-Sox" firstAttribute="top" secondItem="hhl-cz-QJf" secondAttribute="top" constant="16" id="P24-le-Rgs"/>
+                        <constraint firstAttribute="trailing" secondItem="qTL-5z-0wd" secondAttribute="trailing" constant="10" id="Y9y-fv-Htt"/>
+                        <constraint firstAttribute="height" constant="96" id="dwR-Sp-eLV"/>
+                        <constraint firstItem="qTL-5z-0wd" firstAttribute="top" secondItem="hhl-cz-QJf" secondAttribute="top" constant="22" id="j6y-Hu-AsG"/>
+                        <constraint firstItem="wil-WS-Sox" firstAttribute="leading" secondItem="hhl-cz-QJf" secondAttribute="leading" constant="10" id="ruj-M8-FrX"/>
+                        <constraint firstItem="QBF-1Q-23T" firstAttribute="leading" secondItem="wil-WS-Sox" secondAttribute="trailing" constant="10" id="vOD-DI-U80"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCb-sn-aYi">
+                    <rect key="frame" x="17" y="242" width="56" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="每日任务">
+                            <attributes>
+                                <color key="NSColor" red="0.20392156862745098" green="0.20000000000000001" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="14" name="PingFangSC-Medium"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir9-jJ-agx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="114" id="bE1-7r-NCj"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="lsy1.png"/>
+                    <connections>
+                        <action selector="integAction:" destination="-1" eventType="touchUpInside" id="ICD-pL-EOg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ir9-jJ-agx" secondAttribute="trailing" id="Bjn-30-mOK"/>
+                <constraint firstItem="Ir9-jJ-agx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FS4-Zt-Cb3"/>
+                <constraint firstItem="dCb-sn-aYi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="LWG-tQ-Cqa"/>
+                <constraint firstItem="hhl-cz-QJf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ao6-Ft-bLr"/>
+                <constraint firstItem="hhl-cz-QJf" firstAttribute="top" secondItem="Ir9-jJ-agx" secondAttribute="bottom" constant="20" id="jgS-oS-8G0"/>
+                <constraint firstItem="dCb-sn-aYi" firstAttribute="top" secondItem="hhl-cz-QJf" secondAttribute="bottom" constant="12" id="n2m-Er-t06"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hhl-cz-QJf" secondAttribute="trailing" constant="16" id="su8-WE-OX2"/>
+                <constraint firstItem="Ir9-jJ-agx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="z3q-0a-6LT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btn" destination="qTL-5z-0wd" id="pY3-Sh-7iZ"/>
+                <outlet property="limitLab" destination="vBa-ft-jwE" id="hU4-Oi-vg0"/>
+                <outlet property="msgLab" destination="a47-ls-i63" id="nSL-PB-1TI"/>
+                <outlet property="view" destination="hhl-cz-QJf" id="0k2-gV-V1H"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="97.151424287856074"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="invite.png" width="42" height="42"/>
+        <image name="lsy1.png" width="375" height="114"/>
+    </resources>
+</document>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileViewc">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite.png" translatesAutoresizingMaskIntoConstraints="NO" id="qv6-SP-mPj">
+                    <rect key="frame" x="139.5" y="30" width="96" height="96"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="GIn-YB-NQ5"/>
+                        <constraint firstAttribute="height" constant="96" id="Uxp-KG-hBr"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="X3h-kM-6QO" appends="YES" id="F9J-LM-7YH"/>
+                    </connections>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman.png" translatesAutoresizingMaskIntoConstraints="NO" id="hwS-Ce-X1N">
+                    <rect key="frame" x="175.5" y="161" width="24" height="24"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="cuN-7b-Dg5"/>
+                        <constraint firstAttribute="height" constant="24" id="dGt-ct-9VF"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="PIm-qM-NWf" appends="YES" id="bcd-2Q-biS"/>
+                    </connections>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man.png" translatesAutoresizingMaskIntoConstraints="NO" id="FIt-2n-mNW">
+                    <rect key="frame" x="125.5" y="161" width="24" height="24"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="VFH-6v-fNf"/>
+                        <constraint firstAttribute="height" constant="24" id="oO2-cX-JBg"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="iEN-t2-B1m" appends="YES" id="ZET-fS-KaN"/>
+                    </connections>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e6I-fy-VeS">
+                    <rect key="frame" x="16" y="127" width="343" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="sim-9W-vYA"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="昵称昵称">
+                            <attributes>
+                                <font key="NSFont" metaFont="menu" size="11"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="womannor.png" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-0D-gFI">
+                    <rect key="frame" x="225.5" y="161" width="24" height="24"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="gyv-bH-fBw"/>
+                        <constraint firstAttribute="width" constant="24" id="zKs-ac-d0D"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="NS6-qn-mdY" appends="YES" id="eSO-7t-Qsp"/>
+                    </connections>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="sO1-5N-0FM">
+                    <rect key="frame" x="148" y="105" width="79" height="22"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="2F3-jh-7y1"/>
+                        <constraint firstAttribute="height" constant="22" id="DnZ-cp-ixs"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="D3c-9t-4Qe" appends="YES" id="TrU-rJ-4mr"/>
+                    </connections>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="qr2-xL-M8o">
+                    <rect key="frame" x="179.5" y="108" width="16" height="16"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="9X1-Kr-Jmb"/>
+                        <constraint firstAttribute="height" constant="16" id="G3t-yZ-GtD"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Mxd-4P-0RZ" appends="YES" id="yjh-OI-Iph"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FIt-2n-mNW" firstAttribute="top" secondItem="hwS-Ce-X1N" secondAttribute="top" id="5qF-qW-Je8"/>
+                <constraint firstItem="qr2-xL-M8o" firstAttribute="centerY" secondItem="sO1-5N-0FM" secondAttribute="centerY" id="6L9-C3-98d"/>
+                <constraint firstItem="sVm-0D-gFI" firstAttribute="top" secondItem="hwS-Ce-X1N" secondAttribute="top" id="7ZC-BZ-nE2"/>
+                <constraint firstItem="sVm-0D-gFI" firstAttribute="leading" secondItem="hwS-Ce-X1N" secondAttribute="trailing" constant="26" id="Cgi-Tk-cWl"/>
+                <constraint firstItem="qr2-xL-M8o" firstAttribute="centerX" secondItem="sO1-5N-0FM" secondAttribute="centerX" id="IJP-Gi-wtH"/>
+                <constraint firstItem="e6I-fy-VeS" firstAttribute="top" secondItem="sO1-5N-0FM" secondAttribute="bottom" id="Jyn-Ci-G1w"/>
+                <constraint firstItem="hwS-Ce-X1N" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ke5-ox-fvy"/>
+                <constraint firstItem="hwS-Ce-X1N" firstAttribute="leading" secondItem="FIt-2n-mNW" secondAttribute="trailing" constant="26" id="QIy-P0-UKS"/>
+                <constraint firstItem="qv6-SP-mPj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rb8-Lw-owg"/>
+                <constraint firstItem="hwS-Ce-X1N" firstAttribute="top" secondItem="e6I-fy-VeS" secondAttribute="bottom" id="WgY-Vj-Bc7"/>
+                <constraint firstItem="e6I-fy-VeS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Wuw-HE-EX3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="e6I-fy-VeS" secondAttribute="trailing" constant="16" id="jTN-AK-Q3h"/>
+                <constraint firstItem="sO1-5N-0FM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jtb-9r-2n1"/>
+                <constraint firstItem="qv6-SP-mPj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="xyk-AL-ynk"/>
+                <constraint firstItem="e6I-fy-VeS" firstAttribute="top" secondItem="qv6-SP-mPj" secondAttribute="bottom" constant="1" id="yjJ-vB-lYe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="baoImageView" destination="sVm-0D-gFI" id="Mys-LW-czl"/>
+                <outlet property="imageView" destination="qv6-SP-mPj" id="yXn-4T-nhl"/>
+                <outlet property="manImageView" destination="FIt-2n-mNW" id="ife-dK-Beo"/>
+                <outlet property="textFiled" destination="e6I-fy-VeS" id="dMi-s5-9T3"/>
+                <outlet property="womanImageView" destination="hwS-Ce-X1N" id="Y1c-mx-lVW"/>
+            </connections>
+            <point key="canvasLocation" x="85.599999999999994" y="93.553223388305852"/>
+        </view>
+        <tapGestureRecognizer id="iEN-t2-B1m">
+            <connections>
+                <action selector="manAction:" destination="iN0-l3-epB" id="UnA-LY-2Oi"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="PIm-qM-NWf">
+            <connections>
+                <action selector="woAction:" destination="iN0-l3-epB" id="5Fw-9V-8lf"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="NS6-qn-mdY">
+            <connections>
+                <action selector="baoAction:" destination="iN0-l3-epB" id="77A-hd-nsO"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="X3h-kM-6QO">
+            <connections>
+                <action selector="imageAction:" destination="iN0-l3-epB" id="cJS-Sg-INP"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="D3c-9t-4Qe">
+            <connections>
+                <action selector="imageAction:" destination="iN0-l3-epB" id="375-oz-7bz"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Mxd-4P-0RZ">
+            <connections>
+                <action selector="imageAction:" destination="iN0-l3-epB" id="T84-yv-u7Z"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Rectangle 2.png" width="81" height="22"/>
+        <image name="icon_camera.png" width="16" height="16"/>
+        <image name="invite.png" width="42" height="42"/>
+        <image name="man.png" width="24" height="24"/>
+        <image name="woman.png" width="24" height="24"/>
+        <image name="womannor.png" width="24" height="24"/>
+    </resources>
+</document>

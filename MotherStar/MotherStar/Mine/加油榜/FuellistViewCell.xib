@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="KGk-i7-Jjw" customClass="FuellistViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhd-vZ-Agk">
+                        <rect key="frame" x="22" y="15" width="28" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="4np-8D-ICP"/>
+                            <constraint firstAttribute="width" constant="28" id="XYp-GT-vJT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20401906967163086" green="0.19969329237937927" blue="0.21961045265197754" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheer.png" translatesAutoresizingMaskIntoConstraints="NO" id="xDy-0w-Soi">
+                        <rect key="frame" x="56" y="10" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="QAB-nv-G5T"/>
+                            <constraint firstAttribute="width" constant="28" id="cqh-td-xHP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tA-34-JmO">
+                        <rect key="frame" x="90" y="12" width="86" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="LUG-dN-Hfc"/>
+                        </constraints>
+                        <string key="text">俗世里睡一觉
+</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20392156862745098" green="0.19969329237937927" blue="0.21961045265197754" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s71-9y-juR">
+                        <rect key="frame" x="266" y="15.5" width="38" height="17"/>
+                        <string key="text">9,999
+</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.93725490199999995" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEc-3v-ywe">
+                        <rect key="frame" x="91" y="28" width="58" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="isL-FU-5VC"/>
+                        </constraints>
+                        <string key="text">支持8个项目
+</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.52549386024475098" green="0.52548360824584961" blue="0.52549052238464355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eEc-3v-ywe" firstAttribute="leading" secondItem="xDy-0w-Soi" secondAttribute="trailing" constant="7" id="592-VF-gx7"/>
+                    <constraint firstItem="eEc-3v-ywe" firstAttribute="top" secondItem="1tA-34-JmO" secondAttribute="bottom" constant="2" id="GhV-99-Q57"/>
+                    <constraint firstAttribute="trailing" secondItem="s71-9y-juR" secondAttribute="trailing" constant="16" id="HZa-sJ-B7T"/>
+                    <constraint firstItem="xDy-0w-Soi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Sot-Am-Lfg"/>
+                    <constraint firstItem="1tA-34-JmO" firstAttribute="leading" secondItem="xDy-0w-Soi" secondAttribute="trailing" constant="6" id="TAq-j6-QaJ"/>
+                    <constraint firstItem="xDy-0w-Soi" firstAttribute="leading" secondItem="nhd-vZ-Agk" secondAttribute="trailing" constant="6" id="V7Z-7r-hg0"/>
+                    <constraint firstItem="nhd-vZ-Agk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="edB-zq-tPr"/>
+                    <constraint firstItem="1tA-34-JmO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="nBV-YQ-dCP"/>
+                    <constraint firstItem="nhd-vZ-Agk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pc9-V0-JM0"/>
+                    <constraint firstItem="s71-9y-juR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sMo-gF-U3l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+            <connections>
+                <outlet property="icon" destination="xDy-0w-Soi" id="Fme-4u-XVT"/>
+                <outlet property="integralLab" destination="s71-9y-juR" id="5cZ-cI-E4W"/>
+                <outlet property="name" destination="1tA-34-JmO" id="3mK-Y0-3ek"/>
+                <outlet property="numLab" destination="nhd-vZ-Agk" id="mMU-fq-TM3"/>
+                <outlet property="supportLab" destination="eEc-3v-ywe" id="efp-5V-PiE"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cheer.png" width="42" height="42"/>
+    </resources>
+</document>

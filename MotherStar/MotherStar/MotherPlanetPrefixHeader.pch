@@ -1,0 +1,153 @@
+//
+//  MotherPlanetPrefixHeader.pch
+//  MotherStar
+//
+//  Created by yanming niu on 2019/12/18.
+//  Copyright © 2019 yanming niu. All rights reserved.
+//
+
+#ifndef MotherPlanetPrefixHeader_pch
+#define MotherPlanetPrefixHeader_pch
+
+#import "BaseViewController.h"
+#import "RootViewController.h"
+
+#import "PwdLoginViewController.h"
+
+//全局
+#import "RequestManager.h"
+#import "RequestHandle.h"
+#import "OSSManager.h"
+#import "AppCacheManager.h"
+#import "PhotoAlbumTools.h"
+#import "MotherPlanetAlertView.h"
+#import "GlobalSingleton.h"
+#import "GlobalHandle.h"
+
+//第三方
+#import <Masonry/Masonry.h>
+#import "MJRefresh.h"
+#import "IQKeyboardManager.h"
+#import "InputKit.h"
+#import <MJExtension/MJExtension.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <TFHpple/TFHpple.h>
+#import <SJVideoPlayer.h>
+#import "UIImageView+WebCache.h"
+#import "Gallop.h"
+#import "NSDate+GFCalendar.h"
+#import <UShareUI/UShareUI.h>
+
+//Category
+#import "NSString+Method.h"
+#import "UIColor+Hex.h"
+#import "NSString+AttributedString.h"
+#import "NSAttributedString+Private.h"
+#import "NSString+Extension_hzj.h"
+#import "UITextView+ZWLimitCounter.h"
+#import "UITextView+ZWPlaceHolder.h"
+#import "UILabel+LCLabelCategory.h"
+#import "IXAttributeTapLabel.h"
+#import "SGAppKit.h"
+#import "UIButton+Private.h"
+
+
+//开源自定义控件
+#import "CustomLabel.h"
+#import "GKNavigationBar.h"
+#import "MyProgressHUD.h"
+#import "StarRefreshGifHeader.h"
+
+
+//复用
+#import "HotBrainholeModel.h"
+#import "HotBrainholeVideoModel.h"
+#import "HotBrainholeTextTableViewCell.h"
+#import "HotBrainholeVideoTableViewCell.h"
+#import "TagModel.h"
+#import "CommentSectionHeaderView.h"
+
+
+
+
+#define BaseUrl @"https://ssl.motherplanet.cn/api"  //正式环境
+
+//#define BaseUrl @"http://140.143.207.42:8080/api"  //本地外网 测试  接口重构优化
+
+//#define BaseUrl @"http://180.76.108.117:8188/api"  //本地外网 测试
+
+//#define BaseUrl @"http://192.168.0.162:8188/api"  //顺强 本地
+
+//#define BaseUrl @"http://192.168.0.183:8188/api"  //本地内网 测试  振国
+
+//#define BaseUrl @"http://192.168.92.1:8188/api"  //本地内网 测试  小哲
+
+#define KeyWindow [UIApplication sharedApplication].keyWindow
+
+//#define token()  [AppCacheManager sharedSession].token?[AppCacheManager sharedSession].token:@"";
+
+#define token()  [AppCacheManager sharedSession].token;
+
+#define ZS_ISIphoneX    (([UIScreen mainScreen].bounds.size.height/[UIScreen mainScreen].bounds.size.width) >= 2.16)
+#define ZS_StatusBarHeight (ZS_ISIphoneX ? 44.f : 20.f)
+
+#define ScreenBounds [UIScreen mainScreen].bounds
+
+// 屏幕宽度
+#define  SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+// 屏幕高度
+#define  SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define isIPhoneXAll \
+({BOOL isIPhoneXAll = NO;\
+if (@available(iOS 11.0, *)) {\
+isIPhoneXAll = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isIPhoneXAll);})
+#define NavigationBarHeight 44
+#define TabbarHeight = 49
+#define StatusBarHeight   (isIPhoneXAll ? 44.f : 20.f)
+#define StatusAndNaviHeight  (isIPhoneXAll ? 88.f : 64.f)
+#define TabbarSafeBottomMargin   (isIPhoneXAll ? 34.f : 0.f)
+#define TabbarAndSafeHeight  (isIPhoneXAll ? 83.f : 49.f)
+
+
+//字体
+
+#define UIFONT(a) [UIFont systemFontOfSize:a]
+//苹方-简 中黑体
+#define PingFangSC_Medium(a) ([UIFont fontWithName:@"PingFangSC-Medium" size:(a)])
+//苹方-简 常规字体
+#define PingFangSC_Regular(a) ([UIFont fontWithName:@"PingFangSC-Regular" size:(a)])
+//苹方-简 细体
+#define PingFangSC_Light(a) ([UIFont fontWithName:@"PingFangSC-Light" size:(a)])
+
+//颜色
+#define UICOLOR(a) [UIColor colorWithHex:a]
+
+//字符串是否为空
+#define String_isEmpty(str) (str == nil || [str isKindOfClass:[NSNull class]] || str.length == 0 )
+
+//数组是否为空
+#define Array_isEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+
+//字典是否为空
+#define Dictionary_isEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
+
+#define WeakSelf  __weak typeof(self)weakSelf = self;
+
+
+#define kFBaseHeight [[UIScreen mainScreen]bounds].size.height
+#define kFBaseWidth [[UIScreen mainScreen]bounds].size.width
+
+#define kFRGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:255.0/255.0]
+
+#define kFMainColor kFRGB(67, 130, 195)
+
+#define KFMainBackColor kFRGB(242, 242, 242);
+
+#define KFAppHeight 230
+
+
+
+#endif /* MotherPlanetPrefixHeader_pch */

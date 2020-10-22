@@ -1,0 +1,147 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AliyunOSSiOS (2.10.7)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - InputKit (1.1.15)
+  - IQKeyboardManager (6.5.4)
+  - Masonry (1.1.0)
+  - MJExtension (3.2.1)
+  - MJRefresh (3.2.0)
+  - Reachability (3.2)
+  - ReactiveObjC (3.1.1)
+  - SJBaseVideoPlayer (3.1.8):
+    - Masonry
+    - Reachability
+    - SJBaseVideoPlayer/AVPlayer (= 3.1.8)
+    - SJBaseVideoPlayer/Common (= 3.1.8)
+    - SJUIKit/AttributesFactory (>= 0.0.0.38)
+    - SJUIKit/ObserverHelper (>= 0.0.0.38)
+    - SJUIKit/Queues (>= 0.0.0.38)
+  - SJBaseVideoPlayer/AVPlayer (3.1.8):
+    - Masonry
+    - Reachability
+    - SJBaseVideoPlayer/Common
+    - SJUIKit/AttributesFactory (>= 0.0.0.38)
+    - SJUIKit/ObserverHelper (>= 0.0.0.38)
+    - SJUIKit/Queues (>= 0.0.0.38)
+  - SJBaseVideoPlayer/Common (3.1.8):
+    - Masonry
+    - Reachability
+    - SJBaseVideoPlayer/ResourceLoader
+    - SJUIKit/AttributesFactory (>= 0.0.0.38)
+    - SJUIKit/ObserverHelper (>= 0.0.0.38)
+    - SJUIKit/Queues (>= 0.0.0.38)
+  - SJBaseVideoPlayer/ResourceLoader (3.1.8):
+    - Masonry
+    - Reachability
+    - SJUIKit/AttributesFactory (>= 0.0.0.38)
+    - SJUIKit/ObserverHelper (>= 0.0.0.38)
+    - SJUIKit/Queues (>= 0.0.0.38)
+  - SJUIKit/AttributesFactory (0.0.0.39):
+    - SJUIKit/AttributesFactory/Deprecated (= 0.0.0.39)
+    - SJUIKit/AttributesFactory/UIKitText (= 0.0.0.39)
+  - SJUIKit/AttributesFactory/Deprecated (0.0.0.39)
+  - SJUIKit/AttributesFactory/UIKitText (0.0.0.39)
+  - SJUIKit/ObserverHelper (0.0.0.39)
+  - SJUIKit/Queues (0.0.0.39)
+  - SJVideoPlayer (3.1.1):
+    - SJBaseVideoPlayer (>= 3.1.7)
+    - SJVideoPlayer/Common (= 3.1.1)
+    - SJVideoPlayer/ControlLayers (= 3.1.1)
+    - SJVideoPlayer/ResourceLoader (= 3.1.1)
+  - SJVideoPlayer/Common (3.1.1):
+    - Masonry
+    - SJBaseVideoPlayer (>= 3.1.7)
+    - SJUIKit/AttributesFactory
+    - SJVideoPlayer/ResourceLoader
+  - SJVideoPlayer/ControlLayers (3.1.1):
+    - SJBaseVideoPlayer (>= 3.1.7)
+    - SJVideoPlayer/Common
+  - SJVideoPlayer/ResourceLoader (3.1.1):
+    - SJBaseVideoPlayer (>= 3.1.7)
+  - SVProgressHUD (2.2.5)
+  - TFHpple (2.0.0)
+  - TZImagePickerController (3.2.9)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.2.1)
+  - AliyunOSSiOS
+  - FMDB
+  - InputKit (~> 1.1.15)
+  - IQKeyboardManager
+  - Masonry (= 1.1.0)
+  - MJExtension
+  - MJRefresh (= 3.2.0)
+  - ReactiveObjC
+  - SJVideoPlayer
+  - SVProgressHUD
+  - TFHpple
+  - TZImagePickerController
+  - YYImage
+  - YYText
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ReactiveObjC
+  trunk:
+    - AFNetworking
+    - AliyunOSSiOS
+    - FMDB
+    - InputKit
+    - IQKeyboardManager
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - Reachability
+    - SJBaseVideoPlayer
+    - SJUIKit
+    - SJVideoPlayer
+    - SVProgressHUD
+    - TFHpple
+    - TZImagePickerController
+    - YYImage
+    - YYText
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  InputKit: b82938c2c684d285909cac9de150739aa4814d10
+  IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SJBaseVideoPlayer: 7c3d6d0e8c9cbd731143d2ddb53a2157e74479de
+  SJUIKit: 5479a150083e606937a796801ecaae6317e046f5
+  SJVideoPlayer: 02bafffeb014806167be201f2860462fdc4d9e87
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TFHpple: a916fe0799eb30aa29b2670d14d5868cdd3a5b81
+  TZImagePickerController: 1f92968aa0e98a06b9e2eccca8560acc19254257
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 06acbdc3da71c71c38d0cac44125a7d53a147dcc
+
+COCOAPODS: 1.8.4

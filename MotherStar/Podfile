@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '10.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'MotherStar' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MotherStar
+
+
+pod 'MJRefresh', '3.2.0'
+pod 'Masonry' , '1.1.0'
+pod 'AFNetworking', '3.2.1'
+pod 'SVProgressHUD'
+pod 'AliyunOSSiOS'
+pod 'FMDB'
+pod 'IQKeyboardManager'
+pod 'InputKit', '~> 1.1.15'
+pod 'MJExtension'
+pod 'YYText'
+pod 'YYImage'
+pod 'TZImagePickerController'
+pod 'TFHpple'
+pod 'SJVideoPlayer'
+pod 'ReactiveObjC'
+end
